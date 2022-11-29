@@ -1,0 +1,29 @@
+<idea-plugin>
+    <id>com.example.test-task-plugin</id>
+    <name>Statistics</name>
+
+    <vendor email="apotriasaeva@jacobs-university.de" url="https://www.yourcompany.com">JUB</vendor>
+
+    <description><![CDATA[
+    Get number of methods, number of variables defined in the method and the last person that modified this file
+    </br>
+    Use this plugin to show statistics.
+    ]]></description>
+
+    <depends>com.intellij.modules.platform</depends>
+    <depends>org.jetbrains.kotlin</depends>
+
+    <depends>com.intellij.modules.vcs</depends>
+    <depends>Git4Idea</depends>
+
+    <actions>
+
+        <action id="Statistics" class="com.example.testtaskplugin.StatisticsAction"
+                text="Show Statistics"
+                icon="AllIcons.General.Balloon">
+
+            <add-to-group group-id="ToolbarRunGroup" anchor="last"/>
+        </action>
+
+    </actions>
+</idea-plugin>
